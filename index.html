@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendario de Adviento</title>
+
+    <!-- Incluir el archivo de estilo -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: url("./img/background.png");
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-position: center center; /* Centra la imagen */
+        background-attachment: fixed; /* Hace que la imagen se quede fija mientras se hace scroll */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <div class="div-head">
+      <!-- Usamos una imagen como botón -->
+      <img
+        src="./img/buttonHappy.png"
+        id="play-button"
+        class="button-image shake"
+        alt="Reproducir Música"
+        style="cursor: pointer"
+      />
+    </div>
+
+    <!-- ICONOS DEL CALENDARIO FOTOS, REGALO Y CAMBIO EN FECHA -->
+    <div class="puertas-adviento">
+      <a
+        class="puerta"
+        id="puerta-1"
+        href="#"
+        data-elementor-open-lightbox="yes"
+        data-dia="25"
+      >
+        <img src="./img/navidad/1.gif" alt="Puerta 1" class="img-a" />
+      </a>
+      <a
+        class="puerta"
+        id="puerta-2"
+        href="#"
+        data-elementor-open-lightbox="yes"
+        data-dia="26"
+      >
+        <img src="./img/navidad/2.gif" alt="Puerta 2" class="img-a" />
+      </a>
+      <a
+        class="puerta"
+        id="puerta-3"
+        href="#"
+        data-elementor-open-lightbox="yes"
+        data-dia="27"
+      >
+        <img src="./img/navidad/3.gif" alt="Puerta 3" class="img-a" />
+      </a>
+      <a
+        class="puerta"
+        id="puerta-4"
+        href="#"
+        data-elementor-open-lightbox="yes"
+        data-dia="28"
+      >
+        <img src="./img/navidad/4.gif" alt="Puerta 4" class="img-a" />
+      </a>
+      <a
+        class="puerta"
+        id="puerta-5"
+        href="#"
+        data-elementor-open-lightbox="yes"
+        data-dia="29"
+      >
+        <img src="./img/navidad/5.gif" alt="Puerta 5" class="img-a" />
+      </a>
+      <a
+        class="puerta"
+        id="puerta-6"
+        href="#"
+        data-elementor-open-lightbox="yes"
+        data-dia="30"
+      >
+        <img src="./img/navidad/6.gif" alt="Puerta 6" class="img-a" />
+      </a>
+
+      <a
+        class="puerta"
+        id="puerta-7"
+        href="#"
+        data-elementor-open-lightbox="yes"
+        data-dia="31"
+      >
+        <img src="./img/navidad/7.gif" alt="Puerta 7" class="img-a" />
+      </a>
+    </div>
+
+    <!-- Modal de regalo (lightbox) -->
+    <div id="modal-regalo" class="modal">
+      <span class="close">&times;</span>
+      <img id="regalo-img" src="" alt="Regalo" />
+    </div>
+
+    <!-- Incluir el archivo de script -->
+    <script src="script.js"></script>
+  </body>
+</html>
